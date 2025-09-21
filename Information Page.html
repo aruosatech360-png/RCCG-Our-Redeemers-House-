@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Information - RCCG Our Redeemers House</title>
+  <meta name="description" content="Information about RCCG Our Redeemers House — ministers, sermons, prayer requests, and resources." />
+  <meta name="keywords" content="RCCG, Redeemers, church, sermon, prayer, giving, ministers, teachings" />
+  <meta property="og:title" content="Information - RCCG Our Redeemers House" />
+  <meta property="og:description" content="Find information on our ministers, sermons, teachings, and submit prayer requests." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    .fade-in { animation: fadeIn 1s ease-in forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .slide-up { animation: slideUp 0.8s ease-out forwards; transform: translateY(40px); opacity: 0; }
+    @keyframes slideUp { to { transform: translateY(0); opacity: 1; } }
+    .slide-in-left { animation: slideInLeft 0.4s ease-out forwards; }
+    @keyframes slideInLeft { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    .slide-out-left { animation: slideOutLeft 0.3s ease-in forwards; }
+    @keyframes slideOutLeft { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+    /* Added for mobile menu overlay */
+    .body-no-scroll { overflow: hidden; }
+    .menu-overlay { background-color: rgba(0, 0, 0, 0.5); z-index: 35; }
+
+    /* Added for minister social media toggle */
+    .minister-socials { opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; }
+    .minister-socials.show { opacity: 1; pointer-events: auto; }
+
+    /* Added for hero banner */
+    .hero-overlay { background-image: linear-gradient(180deg, rgba(2,6,23,0.6), rgba(8,145,178,0.2)); }
+
+    @media (max-width: 768px) {
+      .side-header { position: fixed; transform: translateX(-100%); transition: transform 0.3s ease-in-out; width: 220px; }
+      .side-header.open { transform: translateX(0); }
+      .main-content { margin-left: 0; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+  <!-- Mobile Menu Button -->
+  <button id="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 bg-teal-600 text-white p-2 rounded-md shadow-lg">☰</button>
+
+  <!-- Side Navigation -->
+  <aside id="sidebar" class="side-header fixed top-0 left-0 h-full bg-slate-900 text-white flex flex-col py-6 px-4 shadow-lg md:translate-x-0 md:w-64 z-40 transition-transform duration-300 ease-in-out">
+    <div class="flex items-center gap-3 mb-10">
+      <img src="RCCG Logo.jpg" alt="RCCG ORH Logo" class="w-12 h-12 rounded-full object-cover" />
+      <div>
+        <div class="font-bold text-lg">RCCG ORH</div>
+        <small class="text-slate-400">LP 6, Mega 3</small>
+      </div>
+    </div>
+    <nav class="flex flex-col gap-3 text-sm" id="main-nav">
+      <a href="index.html" class="hover:text-teal-400 transition nav-link">Home</a>
+      <a href="history.html" class="hover:text-teal-400 transition nav-link">About Us</a>
+      <a href="Information Page.html" class="hover:text-teal-400 transition nav-link">Information</a>
+      <a href="index.html#events" class="hover:text-teal-400 transition nav-link">Events</a>
+      <a href="gallery.html" class="hover:text-teal-400 transition nav-link">Gallery</a>
+      <a href="hymns.html" class="hover:text-teal-400 transition nav-link">Hymns</a>
+      <a href="resources.html" class="hover:text-teal-400 transition nav-link">Resources</a>
+      <a href="giving.html" class="hover:text-teal-400 transition nav-link">Give</a>
+      <a href="index.html#contact" class="hover:text-teal-400 transition nav-link">Contact</a>
+    </nav>
+    <div class="mt-auto flex flex-col gap-2"></div>
+  </aside>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menu-overlay" class="menu-overlay fixed inset-0 hidden md:hidden"></div>
+
+  <!-- Main Content -->
+  <main class="main-content md:ml-64 transition-all duration-300 ease-in-out">
+
+    <!-- Page Header -->
+    <section class="relative text-white py-20 flex items-center justify-center min-h-[300px] overflow-hidden">
+        <img src="Welcome.jpg" alt="Welcome Banner" class="absolute inset-0 w-full h-full object-cover">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold drop-shadow-lg">Church Information</h1>
+            <p class="mt-2 text-slate-200 drop-shadow">Details about our ministries, teachings, and more.</p>
+        </div>
+    </section>
+
+    <!-- About RCCG History -->
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center bg-slate-100 rounded-xl my-16">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">About The Redeemed Christian Church of God</h2>
+        <p class="text-slate-700 mb-6 max-w-3xl mx-auto">Learn about the humble beginnings and the miraculous global expansion of the RCCG, from its founding by Rev. Josiah Akindayomi to its current leadership under Pastor E.A. Adeboye.</p>
+        <a href="history.html" class="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors duration-300 inline-block">Read Our History</a>
+    </section>
+
+    <!-- Daily Bible Verse -->
+    <section id="daily-verse" class="max-w-6xl mx-auto px-6 py-16 slide-up">
+      <div class="glass p-8 md:p-10 rounded-xl shadow-xl text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Verse of the Day</h2>
+        <blockquote id="verse-text" class="text-lg md:text-xl italic text-slate-800">
+          Loading verse...
+        </blockquote>
+        <cite id="verse-reference" class="block mt-4 font-semibold text-slate-600"></cite>
+      </div>
+    </section>
+
+    
+     <!-- Recent Teachings -->
+    <section id="recent-teachings" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-8">RECENT TEACHINGS</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <a href="#" class="block hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+            <img src="Sermon1.jpg" alt="Eternity" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg mb-2">ETERNITY</h3>
+              <p class="text-teal-600 font-medium">Click to view more</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="block hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+            <img src="Sermon2.jpg" alt="He Cares..." class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg mb-2">HE CARES...</h3>
+              <p class="text-teal-600 font-medium">Click to view more</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="block hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+            <img src="https://via.placeholder.com/300x200" alt="Trust God" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg mb-2">TRUST GOD</h3>
+              <p class="text-teal-600 font-medium">Click to view more</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="block hover:shadow-lg transition-shadow duration-300 transform hover:scale-105">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md h-full">
+            <img src="https://via.placeholder.com/300x200" alt="New Teaching" class="w-full h-48 object-cover">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg mb-2">NEW TEACHING</h3>
+              <p class="text-teal-600 font-medium">Click to view more</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- OUR ACTIVITIES -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">OUR ACTIVITIES</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="ThanksGiving Service.jpg" alt="Thanksgiving Service" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Thanksgiving Service</h3>
+                    <p class="text-gray-600 text-sm mb-4">Join us every first Sunday of the month for our special Thanksgiving service...</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('thanksgivingModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Worship Sunday.jpg" alt="Sunday Service" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Sunday Service</h3>
+                    <p class="text-gray-600 text-sm mb-4">You're invited to our life changing services held every Sunday...</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('sundayServiceModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Breakthrough Service.jpg" alt="Special Service" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">BreakThrough Service</h3>
+                    <p class="text-gray-600 text-sm mb-4">This service is a special time dedicated to seeking divine intervention and supernatural change.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('specialServiceModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Digging deep.jpg" alt="Digging Deep" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Digging Deep</h3>
+                    <p class="text-gray-600 text-sm mb-4">Join us every Tuesday from 6 pm to 7 pm for a deep dive...</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('diggingDeepModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Faith-Clinic.jpg" alt="Faith Clinic" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Faith Clinic</h3>
+                    <p class="text-gray-600 text-sm mb-4">A time of intense prayer for healing and breakthroughs every Thursday.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('faithClinicModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Holy Communion.jpg" alt="Holy Communion" class="w-full h-48 object-contain bg-slate-100 group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Holy Communion</h3>
+                    <p class="text-gray-600 text-sm mb-4">A sacred time of remembrance and fellowship with the Lord.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('holyCommunionModal')">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Enquiries & Requests -->
+    <section id="enquiries" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">ENQUIRIES & REQUESTS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Royal Oaks.jpg" alt="Church Location" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Locate Our Church</h3>
+                    <p class="text-gray-600 text-sm mb-4">Find us easily and get directions from your location.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('locateUsModal')">View Map</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Wedding.jpeg" alt="Getting Married" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Getting Married</h3>
+                    <p class="text-gray-600 text-sm mb-4">Learn about the journey of marriage in RCCG and our pre-marital counseling.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('marriageModal')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Counselling.jpg" alt="Meet with a Counsellor" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Meet with a Counsellor</h3>
+                    <p class="text-gray-600 text-sm mb-4">Schedule a one-on-one appointment for counseling or guidance.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('counsellorAppointmentModal')">Request Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="BabyDedications.jpg" alt="Child Dedication" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Child Dedication</h3>
+                    <p class="text-gray-600 text-sm mb-4">Dedicate your child to the Lord in a special service.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('childDedicationModal')">Enquire</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-md group">
+                <img src="Salvation.jpg" alt="New Life in Christ" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="p-4 text-center">
+                    <h3 class="font-semibold text-xl mb-2">Give Your Life to Christ</h3>
+                    <p class="text-gray-600 text-sm mb-4">Ready to start a new journey with Jesus? We're here to guide you.</p>
+                    <button class="bg-teal-600 text-white rounded-full px-4 py-2 text-sm font-medium hover:bg-teal-700 transition-colors duration-300" onclick="openActivityModal('salvationModal')">I'm Ready</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Prayer Request -->
+    <section id="prayer" class="max-w-4xl mx-auto px-6 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Prayer Request</h2>
+      <form id="prayer-form" class="bg-white p-6 md:p-8 rounded-xl shadow-lg space-y-4">
+        <div>
+          <label for="prayer-name" class="sr-only">Name (optional)</label>
+          <input id="prayer-name" name="prayer-name" class="w-full p-3 border rounded" placeholder="Name (optional)" />
+        </div>
+        <div>
+          <label for="prayer-email" class="sr-only">Email (optional)</label>
+          <input id="prayer-email" name="prayer-email" class="w-full p-3 border rounded" type="email" placeholder="Email (optional)" />
+        </div>
+        <div>
+          <label for="prayer-request" class="sr-only">Your prayer request</label>
+          <textarea id="prayer-request" name="prayer-request" class="w-full p-3 border rounded" rows="5" placeholder="Your prayer request" required></textarea>
+        </div>
+        <button type="submit" class="bg-teal-600 text-white px-6 py-2 rounded hover:scale-105 transition w-full">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+      <div class="max-w-4xl mx-auto px-6 grid gap-10 md:grid-cols-2">
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">Quick Links</h3>
+          <nav class="grid grid-cols-2 gap-2 text-sm">
+            <a href="index.html" class="hover:text-teal-400 transition">Home</a>
+            <a href="history.html" class="hover:text-teal-400 transition">About Us</a>
+            <a href="Information Page.html" class="hover:text-teal-400 transition">Information</a>
+            <a href="index.html#events" class="hover:text-teal-400 transition">Events</a>
+            <a href="gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+            <a href="hymns.html" class="hover:text-teal-400 transition">Hymns</a>
+            <a href="resources.html" class="hover:text-teal-400 transition">Resources</a>
+            <a href="giving.html" class="hover:text-teal-400 transition">Give</a>
+          </nav>
+        </div>
+
+        <!-- Connect -->
+        <div>
+          <h3 class="font-bold mb-4">Connect With Us</h3>
+          <div class="flex gap-3">
+            <a href="https://web.facebook.com/rccg.ourredeemershouse/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/rccg.ourredeemershouse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@rccg.ourredeemershouse" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-slate-400 mt-10 border-t border-slate-700 pt-6">© <span id="year"></span> RCCG Our Redeemers House. All Rights Reserved.</div>
+    </footer>
+  </main>
+
+    <!-- Activity Modals -->
+    <div id="thanksgivingModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="thanksgivingModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Thanksgiving+Service+Detail" alt="Thanksgiving Service" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('thanksgivingModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Thanksgiving Service</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Join us every first Sunday of the month for our special Thanksgiving service, where we come together to praise, rejoice, and dance in gratitude for God's faithfulness and mercies. Experience uplifting moments including birthday celebrations, special thanksgivings, tea time networking, and natural group meetings. Don't miss out on this unforgettable day!
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <strong>Venue:</strong>
+                        <a href="https://maps.app.goo.gl/yqYwL625L6119J147" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 underline">Main Church Auditorium</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sundayServiceModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="sundayServiceModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Sunday+Service+Detail" alt="Sunday Service" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('sundayServiceModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Sunday Service</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    You're invited to our life changing services held every Sunday, starting at 8 AM & 10 AM. Come and experience the presence of God, powerful worship, and an inspiring message that will transform your life. All are welcome!
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <strong>Venue:</strong>
+                        <a href="https://maps.app.goo.gl/yqYwL625L6119J147" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 underline">Main Church Auditorium</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specialServiceModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="specialServiceModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Special+Service+Detail" alt="Special Service" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('specialServiceModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">BreakThrough Service</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+This service is a special time dedicated to seeking divine intervention and supernatural change. As we delve into the undiluted Word of God, you will receive the revelation and anointing needed to break through every barrier and limitation in your life.
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <strong>Venue:</strong>
+                        <a href="https://maps.app.goo.gl/vRLGH78ncjEFgvYe9" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 underline">Click for Directions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="diggingDeepModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="diggingDeepModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Digging+Deep+Detail" alt="Digging Deep" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('diggingDeepModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Digging Deep</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Join us every Tuesday from 6 pm to 7 pm for a deep dive into the secrets and treasures of God's Word. This interactive Bible study session will help you grow in your faith and understanding. Bring your Bible and a readiness to learn!
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        <strong>Venue:</strong>
+                        <span>Online (via Zoom/Facebook)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiries & Requests Modals -->
+    <div id="locateUsModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full transform transition-all duration-300 scale-95 opacity-0" id="locateUsModalContent">
+            <div class="relative p-4 border-b">
+                <h3 class="font-bold text-2xl text-center">Our Location</h3>
+                <button class="absolute top-3 right-3 text-gray-600 text-2xl font-bold bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-300" onclick="closeActivityModal('locateUsModal')">&times;</button>
+            </div>
+            <div class="p-2 md:p-4">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.693121545628!2d3.505785115349926!3d6.433289095398288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5c7b5a55555%3A0x8912399201f11438!2sRoyal%20Oaks!5e0!3m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-downgrade"></iframe>
+                </div>
+                <div class="p-4 text-center">
+                    <p class="mb-4">Royal Oaks Centre, KM 14, Lekki-Epe Expressway By Chisco Bus-Stop, After Enyo Petrol Station Ikate - Elegushi, Lekki</p>
+                    <a href="https://maps.app.goo.gl/yqYwL625L6119J147" target="_blank" rel="noopener noreferrer" class="bg-teal-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-teal-700 transition-colors duration-300 inline-block">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="marriageModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="marriageModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Marriage+in+Christ" alt="Getting Married" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('marriageModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Marriage in RCCG</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    In The Redeemed Christian Church of God, we view marriage as a sacred covenant ordained by God. It is a lifelong commitment between a man and a woman, reflecting Christ's relationship with the Church. We provide comprehensive pre-marital counseling to prepare couples for this blessed journey, focusing on spiritual unity, communication, and shared values. For more information, you can download our marriage guide or contact us to make an enquiry.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="Marriage-Status-Pastors-Summary.pptx" download="Marriage-Status-Pastors-Summary.pptx" class="bg-gray-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-gray-700 transition-colors duration-300 inline-block text-center">Download Guide</a>
+                    <a href="tel:+2348096824324" class="bg-teal-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-teal-700 transition-colors duration-300 inline-block text-center">Enquire by Phone</a>
+                    <a href="https://wa.me/2348096824324" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-green-600 transition-colors duration-300 inline-block text-center">Enquire on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="counsellorAppointmentModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="counsellorAppointmentModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Confidential+Counseling" alt="Meet a Counsellor" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('counsellorAppointmentModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Appointment with a Counsellor</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Our trained counsellors are available for confidential spiritual guidance, support, and prayer. If you wish to schedule an appointment, please contact us through the number below. We are here to support you on your journey.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+2348096824324" class="bg-teal-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-teal-700 transition-colors duration-300 inline-block text-center">Call Us</a>
+                    <a href="https://wa.me/2348096824324" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-green-600 transition-colors duration-300 inline-block text-center">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="childDedicationModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="childDedicationModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Child+Dedication" alt="Child Dedication" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('childDedicationModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Child Dedication</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    "Behold, children are a heritage from the Lord." (Psalm 127:3). Child dedication is a public commitment by parents to raise their child in the ways of the Lord. If you would like to dedicate your child, please contact us to make arrangements.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+2348096824324" class="bg-teal-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-teal-700 transition-colors duration-300 inline-block text-center">Call Us</a>
+                    <a href="https://wa.me/2348096824324" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-green-600 transition-colors duration-300 inline-block text-center">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="salvationModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="salvationModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=A+New+Beginning" alt="Give life to Christ" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('salvationModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">A New Life in Christ</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Accepting Jesus Christ as your Lord and Savior is the most important decision you will ever make. It is the beginning of a wonderful journey of faith and transformation. If you are ready to take this step or want to learn more, we are here to talk and pray with you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+2348096824324" class="bg-teal-600 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-teal-700 transition-colors duration-300 inline-block text-center">Call Us</a>
+                    <a href="https://wa.me/2348096824324" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-green-600 transition-colors duration-300 inline-block text-center">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="faithClinicModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="faithClinicModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Faith+Clinic+Detail" alt="Faith Clinic" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('faithClinicModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Faith Clinic</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Join us every Thursday for Faith Clinic, a time of intense prayer and seeking God's face for healing, breakthroughs, and divine intervention. Service holds from 6 pm to 7 pm.
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        <strong>Venue:</strong>
+                        <span>Online (via Zoom/Facebook)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="holyCommunionModal" class="fixed inset-0 bg-black/70 flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="holyCommunionModalContent">
+            <div class="relative">
+                <img src="https://via.placeholder.com/600x400?text=Holy+Communion+Detail" alt="Holy Communion" class="w-full h-64 object-cover rounded-t-xl">
+                <button class="absolute top-3 right-3 text-white text-2xl font-bold bg-black/50 rounded-full w-8 h-8 flex items-center justify-center" onclick="closeActivityModal('holyCommunionModal')">&times;</button>
+            </div>
+            <div class="p-6">
+                <h3 class="font-bold text-2xl mb-3">Holy Communion Service</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Join us for our Holy Communion service, a sacred time of remembrance and fellowship. This service is held every first Sunday of the month @5pm.
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <p class="text-gray-700 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <strong>Venue:</strong>
+                        <a href="https://maps.app.goo.gl/ffu1SCVVMxrer6AR8" target="_blank" rel="noopener noreferrer" class="hover:text-teal-700 underline">Click for Directions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Mobile Menu Logic ---
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('menu-toggle');
+    const overlay = document.getElementById('menu-overlay');
+
+    function toggleMenu() {
+      const isOpen = sidebar.classList.contains('open');
+      document.body.classList.toggle('body-no-scroll', !isOpen);
+      overlay.classList.toggle('hidden', isOpen);
+
+      if (isOpen) {
+        sidebar.classList.remove('open'); // This triggers the slide-out transition defined in CSS
+      } else {
+        sidebar.classList.add('open'); // This triggers the slide-in transition
+      }
+    }
+
+    toggleBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    // Close sidebar when a nav link is clicked
+    document.querySelectorAll('#sidebar .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (sidebar.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // --- Minister Socials Toggle ---
+    document.querySelectorAll('.minister-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const socials = button.nextElementSibling;
+        const wasVisible = socials.classList.contains('show');
+        
+        // Hide any other open social overlays
+        document.querySelectorAll('.minister-socials.show').forEach(openSocials => {
+          openSocials.classList.remove('show');
+          openSocials.previousElementSibling.textContent = '+';
+        });
+
+        if (!wasVisible) {
+          socials.classList.add('show');
+          button.textContent = '−';
+        }
+      });
+    });
+
+    // --- Activity Modals Logic ---
+    function openActivityModal(modalId) {
+        const modal = document.getElementById(modalId);
+        const modalContent = document.getElementById(modalId + 'Content');
+        modal.classList.remove('hidden');
+        // Trigger reflow to ensure transitions run
+        void modalContent.offsetWidth;
+        modalContent.classList.remove('scale-95', 'opacity-0');
+        modalContent.classList.add('scale-100', 'opacity-100');
+        document.body.classList.add('body-no-scroll'); // Prevent scrolling when modal is open
+    }
+
+    function closeActivityModal(modalId) {
+        const modal = document.getElementById(modalId);
+        const modalContent = document.getElementById(modalId + 'Content');
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        modalContent.classList.add('scale-95', 'opacity-0');
+        // Hide modal after transition
+        modalContent.addEventListener('transitionend', function handler() {
+            modal.classList.add('hidden');
+            document.body.classList.remove('body-no-scroll'); // Re-enable scrolling
+            modalContent.removeEventListener('transitionend', handler);
+        }, { once: true }); // Use { once: true } to automatically remove the listener
+    }
+
+    // Close activity modal when clicking outside of it
+    document.addEventListener('click', function(event) {
+        document.querySelectorAll('.fixed.inset-0.bg-black\\/70').forEach(modal => { // Target the specific overlay class
+            if (!modal.classList.contains('hidden') && modal.id.endsWith('Modal')) { // Check if it's one of the activity modals
+                const modalContent = modal.querySelector('.bg-white.rounded-xl');
+                if (modalContent && !modalContent.contains(event.target) && event.target === modal) {
+                    closeActivityModal(modal.id);
+                }
+            }
+        });
+    });
+
+     // --- Daily Bible Verse ---
+     async function fetchDailyVerse() {
+       const verseTextEl = document.getElementById('verse-text');
+       const verseRefEl = document.getElementById('verse-reference');
+       const today = new Date().toISOString().split('T')[0]; // Get YYYY-MM-DD
+ 
+       try {
+         const cachedData = JSON.parse(localStorage.getItem('dailyVerse'));
+         if (cachedData && cachedData.date === today) {
+           verseTextEl.textContent = `"${cachedData.text}"`;
+           verseRefEl.textContent = cachedData.reference;
+           return;
+         }
+       } catch (e) {
+         console.warn("Could not read daily verse from localStorage.", e);
+       }
+ 
+       try {
+         const response = await fetch('https://beta.ourmanna.com/api/v1/get?format=json&order=daily');
+         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+         
+         const data = await response.json();
+         const verse = data.verse.details;
+ 
+         verseTextEl.textContent = `"${verse.text}"`;
+         verseRefEl.textContent = verse.reference;
+ 
+         localStorage.setItem('dailyVerse', JSON.stringify({ date: today, text: verse.text, reference: verse.reference }));
+       } catch (error) {
+         console.error("Could not fetch daily verse:", error);
+         // Fallback verse in case of API error
+         verseTextEl.textContent = '"For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future."';
+         verseRefEl.textContent = 'Jeremiah 29:11';
+       }
+     }
+     fetchDailyVerse();
+
+    // --- Active Navigation Link ---
+    document.addEventListener('DOMContentLoaded', () => {
+      // Use a more specific filename, or 'index.html' for the root.
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const navLinks = document.querySelectorAll('#main-nav a');
+
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        const linkPage = linkHref.split('#')[0];
+
+        // Don't style anchor links on the same page
+        if (linkHref.startsWith('#')) {
+            return;
+        }
+
+        if (linkPage === currentPage) {
+          link.classList.add('text-teal-400', 'font-bold');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

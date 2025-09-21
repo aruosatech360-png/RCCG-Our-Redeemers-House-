@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery - RCCG Our Redeemers House</title>
+  <meta name="description" content="A gallery of photos from recent services, events, and community life at RCCG Our Redeemers House." />
+  <meta name="keywords" content="RCCG, gallery, photos, church events, worship" />
+  <meta property="og:title" content="Gallery - RCCG Our Redeemers House" />
+  <meta property="og:description" content="Explore moments captured during our services and special events." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    /* Styles for consistency with other pages */
+    .body-no-scroll { overflow: hidden; }
+    .menu-overlay { background-color: rgba(0, 0, 0, 0.5); z-index: 35; }
+    .hero-overlay { background-image: linear-gradient(180deg, rgba(2,6,23,0.6), rgba(8,145,178,0.2)); }
+
+    /* Gallery Item Animation */
+    .gallery-item {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .gallery-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .side-header { position: fixed; transform: translateX(-100%); transition: transform 0.3s ease-in-out; width: 220px; }
+      .side-header.open { transform: translateX(0); }
+      .main-content { margin-left: 0; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+  <!-- Mobile Menu Button -->
+  <button id="menu-toggle" class="md:hidden fixed top-4 left-4 z-50 bg-teal-600 text-white p-2 rounded-md shadow-lg">☰</button>
+
+  <!-- Side Navigation -->
+  <aside id="sidebar" class="side-header fixed top-0 left-0 h-full bg-slate-900 text-white flex flex-col py-6 px-4 shadow-lg md:translate-x-0 md:w-64 z-40 transition-transform duration-300 ease-in-out">
+    <div class="flex items-center gap-3 mb-10">
+      <img src="RCCG Logo.jpg" alt="RCCG ORH Logo" class="w-12 h-12 rounded-full object-cover" />
+      <div>
+        <div class="font-bold text-lg">RCCG ORH</div>
+        <small class="text-slate-400">LP 6, Mega 3</small>
+      </div>
+    </div>
+    <nav class="flex flex-col gap-3 text-sm" id="main-nav">
+      <a href="index.html" class="hover:text-teal-400 transition nav-link">Home</a>
+      <a href="history.html" class="hover:text-teal-400 transition nav-link">About Us</a>
+      <a href="Information Page.html" class="hover:text-teal-400 transition nav-link">Information</a>
+      <a href="index.html#events" class="hover:text-teal-400 transition nav-link">Events</a>
+      <a href="gallery.html" class="hover:text-teal-400 transition nav-link">Gallery</a>
+      <a href="hymns.html" class="hover:text-teal-400 transition nav-link">Hymns</a>
+      <a href="resources.html" class="hover:text-teal-400 transition nav-link">Resources</a>
+      <a href="giving.html" class="hover:text-teal-400 transition nav-link">Give</a>
+      <a href="index.html#contact" class="hover:text-teal-400 transition nav-link">Contact</a>
+    </nav>
+    <div class="mt-auto flex flex-col gap-2"></div>
+  </aside>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menu-overlay" class="menu-overlay fixed inset-0 hidden md:hidden"></div>
+
+  <!-- Main Content -->
+  <main class="main-content md:ml-64 transition-all duration-300 ease-in-out">
+
+    <!-- Page Header -->
+    <section class="relative text-white py-20 flex items-center justify-center min-h-[300px] overflow-hidden">
+        <img src="Choir.jpg" alt="Gallery Banner" class="absolute inset-0 w-full h-full object-cover">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold drop-shadow-lg">Our Gallery</h1>
+            <p class="mt-2 text-slate-200 drop-shadow">Moments from our services and events.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            <!-- Image 1 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Church 2.jpg" alt="Church Service" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Small children.jpg" alt="Children's Ministry" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Choir and wpic.jpg" alt="Choir Singing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 4 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Old School sunday.jpg" alt="Old School Sunday" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 5 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="ORH football.jpg" alt="Church Football Team" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 6 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="PIC & WPIC.jpg" alt="Pastors" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 7 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Service.jpg" alt="Worship Service" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 8 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Mr and mrs kuye.jpg" alt="Church Members" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+            <!-- Image 9 -->
+            <div class="gallery-item group overflow-hidden rounded-lg shadow-lg">
+                <img src="Children.jpg" alt="Children in Church" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out">
+            </div>
+             <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-10">
+      <div class="max-w-6xl mx-auto px-6 grid gap-6 md:grid-cols-3">
+        <div>
+          <h3 class="font-bold">Contact</h3>
+          <p class="mt-2 text-sm">
+            Royal Oaks Centre, KM 14, Lekki-Epe Expressway<br/>Ikate - Elegushi, Lekki<br>
+            <a href="tel:+2348096824324" class="hover:text-teal-400">0809 682 4324</a><br>
+            <a href="mailto:Rccg.orh@gmail.com" class="hover:text-teal-400">Rccg.orh@gmail.com</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold">Enquiries</h3>
+          <form id="contact-form" class="mt-2 space-y-2">
+            <div>
+              <label for="contact-name" class="sr-only">Name</label>
+              <input id="contact-name" name="contact-name" placeholder="Name" class="w-full p-2 border rounded text-slate-900" required />
+            </div>
+            <div>
+              <label for="contact-email" class="sr-only">Email</label>
+              <input id="contact-email" name="contact-email" type="email" placeholder="Email" class="w-full p-2 border rounded text-slate-900" required />
+            </div>
+            <div>
+              <label for="contact-message" class="sr-only">Message</label>
+              <textarea id="contact-message" name="contact-message" placeholder="Message" class="w-full p-2 border rounded text-slate-900" required></textarea>
+            </div>
+            <button type="submit" class="bg-teal-600 text-white px-4 py-2 rounded w-full">Send</button>
+          </form>
+        </div>
+        <div>
+          <h3 class="font-bold">Connect</h3>
+          <div class="mt-3 flex gap-3">
+            <a href="https://web.facebook.com/rccg.ourredeemershouse/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/rccg.ourredeemershouse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266.058 1.644.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@rccg.ourredeemershouse" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center text-xs text-slate-400 mt-6">© <span id="year"></span> RCCG Our Redeemers House</div>
+    </footer>
+  </main>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Mobile Menu Logic ---
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('menu-toggle');
+    const overlay = document.getElementById('menu-overlay');
+
+    function toggleMenu() {
+      const isOpen = sidebar.classList.contains('open');
+      document.body.classList.toggle('body-no-scroll', !isOpen);
+      overlay.classList.toggle('hidden', isOpen);
+
+      if (isOpen) {
+        sidebar.classList.remove('open');
+      } else {
+        sidebar.classList.add('open');
+      }
+    }
+
+    toggleBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    document.querySelectorAll('#sidebar .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (sidebar.classList.contains('open')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // --- Gallery Animation on Scroll ---
+    document.addEventListener('DOMContentLoaded', () => {
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        rootMargin: '0px',
+        threshold: 0.1
+      });
+
+      galleryItems.forEach(item => {
+        observer.observe(item);
+      });
+
+      // --- Active Navigation Link ---
+      // Use a more specific filename, or 'index.html' for the root.
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const navLinks = document.querySelectorAll('#main-nav a');
+
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        const linkPage = linkHref.split('#')[0];
+
+        // Don't style anchor links on the same page
+        if (linkHref.startsWith('#')) {
+            return;
+        }
+
+        if (linkPage === currentPage) {
+          link.classList.add('text-teal-400', 'font-bold');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
